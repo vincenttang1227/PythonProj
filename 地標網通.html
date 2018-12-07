@@ -1,0 +1,2159 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>å°æ¨ç¶²éâææ©ç©ºæ©ç¾è²¨ï¼ææ°å¸å ´æä½å¹
+</title>
+  <meta charset="utf-8">
+<meta name="robots" content="all">
+<meta name="citation_author" content="Author Name">
+<meta name="description" content="Project Description">
+<meta name="keyword" content="Author Name">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-translate-customization" content="7657ea1cd3c3e285-a14be0c93851295f-gd30c510c443f67bd-12"></meta>
+<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->    
+ <!-- <link rel="apple-touch-icon" href="touch-icon-iphone-precomposed.png"> -->
+  <!-- <link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad-precomposed.png"> -->
+  <!-- <link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4-precomposed.png"> -->
+  <!-- <link rel="alternate" type="application/rss+xml" title="" href=""> -->
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/xtyle.css">
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<link rel="stylesheet" type="text/css" href="css/flexslider.css" >
+<link rel="stylesheet" type="text/css" href="css/blueberry.css" >
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="js/xtyle.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.blueberry.js"></script>
+<script type="text/javascript">
+$(function(){
+// å¹« a.abgne_gotoheader å ä¸ click äºä»¶
+$('a.abgne_gotoheader').click(function(){
+// è®æ²è»¸ç¨åç«çæ¹å¼ç§»åå° 0 çä½ç½®
+// æè¬ç¶²å sam ä¿®æ­£ Opera åé¡
+var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+$body.animate({
+scrollTop: 0
+}, 600);
+return false;
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	$(window).load(function() {
+	$('.flexslider').flexslider({
+	animation: "slide",
+	animationLoop: true,
+	itemWidth: 230,
+	itemMargin: 5
+	});
+	});
+
+	$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+
+<!--from!-->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.metadata.js"></script>
+<script type="text/javascript" src="js/2013_form.js"></script>
+
+<script type="text/javascript">
+$(document).ready( function(){
+		$('#form1').validate();
+	});
+	
+$(function(){	   
+	var validate = $("#form2").validate({
+		
+		rules:{
+			captcha:{
+			remote:"process.php"
+			},
+			
+			email:{
+			remote:"emailcheck.php"
+			},
+			
+			bouns:{
+			remote:"bounscheck.php"
+			},
+			
+						shops: {required: function(element) {return $('#pay').val() == '';}},
+			pay: {required: function(){return $('#shops').val() == '';}}
+					},
+		messages:{
+						shops: {required: '<span style=\"color:red;position:absolute;margin :-104px 0 0 247px;"\">è«é¸æãåè²¨éå¸ãæå¾é¸ãå®éä»æ¬¾æ¹å¼ã</span>'},
+			pay: {required: '<span style=\"color:red;position:absolute;margin :-104px 0 0 247px;"\">è«é¸æãåè²¨éå¸ãæå¾é¸ãå®éä»æ¬¾æ¹å¼ã</span>'},
+						
+			captcha:{
+			remote: "<span style=\"color:red;font-size:13px;\">é©è­ç¢¼é¯èª¤!!</span>"
+			},
+			
+			email: { 
+			remote: "<span style=\"color:red;font-size:13px;\">å¸³èéè¦!!</span>"
+			},
+			
+			bouns: { 
+			remote: "<span style=\"color:red;font-size:13px;\">ç´å©é»æ¸ä¸è¶³!!</span>"
+			}	
+		},
+		errorPlacement: function(error, element) {
+			if ( element.is("input[name=captcha]") )
+				error.appendTo ( element.parent() );
+			else
+				error.insertAfter(element);
+		},
+		
+	});	
+
+	$("#getcode").click(function(){
+		$imgstr="getcode.php?randcode="+Math.random();
+		$(this).attr("src",$imgstr);
+	});
+});
+
+
+</script>
+<!--Start of Zopim Live Chat Script
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?2dXXUHpyvj9okYN4lwKx6XiCTWLch4Jr';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+End of Zopim Live Chat Script-->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '238436446828580');
+  fbq('track', âPageView');
+ fbq('track', 'ViewContent');
+ fbq('track', 'Search');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=238436446828580&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TF47LTC');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Hotjar Tracking Code for http://landtop.com.tw/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1030892,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  <script>
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+   <script type="text/javascript">
+ $(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: true,
+    itemWidth: 230,
+    itemMargin: 5
+  });
+});
+  </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF47LTC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- XTYLE GREETINGS -->
+  <div class="grid center layout-fixed-center show">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49579348-1', 'landtop.com.tw');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<body onLoad="MM_preloadImages('images/phone_or_btn.gif','images/fitting_or_btn.gif','images/discount_or_btn.gif','images/orter_or_btn.gif')"><div class="grid1">
+<div style="background-color:#b41c29; height:28px; margin-bottom:0px; padding-top:7px; padding-right:15px">
+<ul class="inline float-left imglink">
+  <li style="padding:0 160px 0 40px; color:#FFF;"><img src="images/headtitle.gif" width="302" height="16">   </li>
+	    <li class="subnav"><a href="shop.php"><img src="images/shop.gif" width="81" height="16"></a></li>
+	<li class="subnav"><a href="join.php"><img src="images/join.gif" width="81" height="16"></a></li>
+	<li class="subnav"><a href="login.php"><img src="images/login.gif" width="73" height="16" alt="æå¡ç»å¥"></a></li>
+	  
+  <li class="subnav"><a href="qa.php"><img src="images/qa.gif" width="75" height="16"></a></li>
+  <!--è³¼ç©èªªæ
+  <li class="subnav"><a href="shopping_guide.php"><img src="images/guide.gif" width="83" height="16" alt="è³¼ç©æ¸å®"></li>-->
+  <li class="subnav"><a href="shopping_cart.php"><img src="images/cart.gif" width="81" height="16" alt="è³¼ç©æ¸å®"></a></li>
+</ul>
+</div>
+<div style="height:75px; background-color:#FFF">
+<div class="grid4"><a href="index.php"><img src="images/logo.jpg" width="210" height="75" alt="å°æ¨ç¶²é" longdesc="http://www.landtop.com.tw"></a></div>
+<div class="grid5">
+<ul class="inline left mynav" style="padding-top:15px">
+  <li class="phone"><a href="products.php?types=1"><img src="images/phone_btn.gif" alt="å¹æ ¼ç¸½è¦½" width="67" height="64" id="Image1" onMouseOver="MM_swapImage('Image1','','images/phone_or_btn.gif',1)" onMouseOut="MM_swapImgRestore()"></a></li>
+  <li class="fitting"><a href="products.php?types=2"><img src="images/fitting_btn.gif" alt="å¨ééä»¶" width="67" height="64" id="Image2" onMouseOver="MM_swapImage('Image2','','images/fitting_or_btn.gif',1)" onMouseOut="MM_swapImgRestore()"></a></li>
+  <li class="discount"><a href="discount.php"><img src="images/discount_btn.gif" alt="éèææ£" width="67" height="64" id="Image3" onMouseOver="MM_swapImage('Image3','','images/discount_or_btn.gif',1)" onMouseOut="MM_swapImgRestore()"></a></li>
+  <li class="other"><a href="shop.php"><img src="images/shop_btn.gif" alt="éå¸æé»" width="67" height="64" id="Image4" onMouseOver="MM_swapImage('Image4','','images/shop_or_btn.gif',1)" onMouseOut="MM_swapImgRestore()"></a></li>
+</ul>
+  </div>
+ <div class="float-right" style="padding-top:30px">
+  <form id="fromw" name="fromw" method="post" action="products_search.php">
+  
+   <input name="search_word" type="text" class="small number" id="search_word" onBlur="if(this.value == ''){this.value = 'è«è¼¸å¥åçæåè';}" onClick="if(this.value == 'è«è¼¸å¥åè'){this.value = '';}else {this.select();}" value="è«è¼¸å¥åè" placecholder="Text input"/>
+   
+   <input name="searchb" type="submit" class="small inverse alert border-radius" id="searchb" value="æå°">
+</form>
+
+</div>
+
+</div>  <div class="grid2" style="margin:3px;">
+   <blockquote class="alert left" style="margin-top:20px">ç¢åç®é</blockquote>
+   <p class="left">è«é¸æåçï¼</p>	<ul class="inline" style="margin:-10px 0 0 -20px;">
+	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_1">Apple</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_2">ASUS</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_7">HTC</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_4">LG</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_6">SAMSUNG</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_5">SONY</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_14">è¯çº</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_13">å°ç±³</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_18">meitu</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_27">SHARP</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_20">oppo</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_30">VIVO</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_17">NOKIA</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_28">motorola</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_29">SUGAR</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_33">Panasonic</a></li>
+     	      	<li class="subnav mainnav float-left" style="width:100px; display:block;"><a href="products.php?types=1#pro_34">KOOBEE</a></li>
+     		</ul>
+<p>&nbsp;</p>
+
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_1" id="pro_1"></a><img src="images/prodpt/844pSa.jpg" alt="" width="100" height="19.37984496124" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=1005">iPhone XR 64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$24800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=1005" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=1006">iPhone XR 128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$26500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=1006" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=1007">iPhone XR 256G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$30500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=1007" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=980">iPhone xs 64G (a2097) </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$32990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=980" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=981">iPhone xs 256G (a2097) </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$37500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=981" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=982">iPhone xs 512G (a2097) </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$45800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=982" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=983">iPhone xs max 64G (a2101)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$35800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=983" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=984">iPhone xs max 256G (a2101)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$40800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=984" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=985">iPhone xs max 512G (a2101)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$49300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=985" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=968">iPhone x 64G (a1901)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$28990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=968" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=817">iPhone x 256G (a1901)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$33500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=817" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=833">iPhone 8 64GB </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$19800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=833" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=834">iPhone 8 256GB </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$24800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=834" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=820">iPhone 8 plus 64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$23500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=820" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=821">iPhone 8 plus 256G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$28500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=821" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=610">iPhone 7 32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$14800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=610" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=740">iPhone 7 128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$18800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=740" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=613">iPhone 7 Plus 32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$19300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=613" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=741">iPhone 7 Plus 128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$22990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=741" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=436">iPhone 6s 32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$8990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=436" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=609">iPhone 6s Plus 32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$10500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=609" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=788">iPad pro 10.5 64G wifi</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$19300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=788" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=789">iPad pro 10.5 256G wifi</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$23800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=789" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=929">iPad 2018 32G wifi</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$9500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=929" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=930">iPad 2018 128G wifi</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$11990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=930" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=932">iPad 2018 32G LTE</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$14990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=932" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=1&pk=933">iPad 2018 128G LTE</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$17990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=1&pk=933" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_2" id="pro_2"></a><img src="images/prodpt/586Q6N.jpg" alt="" width="100" height="19.37984496124" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=937">Zenfone Max M1 2G/32G (zb555kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$3800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=937" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=959">Zenfone Max pro 3G/32G (zb602kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=959" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=960">Zenfone Max pro 6G/64G (zb602kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$6500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=960" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=840">Zenfone 4 Pro 6G/64G (zs551kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$8990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=840" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=800">Zenfone 4 4G/64G (ze554kl) </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$5300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=800" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=803">Zenfone 4 6G/64G (ze554kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$6800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=803" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=801">Zenfone 4 Selifie Pro 4G/64G (zd552kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=801" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=904">Zenfone 5 4G/64G (ze620kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$8990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=904" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=940">Zenfone 5z 6G/64G (zs620kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=940" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=941">Zenfone 5z 6G/128G (zs620kl )</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=941" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=963">Zenfone 5z 8G/256G (zs620kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=963" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=998">Zenfone ROG 8G/128G ZS600KL</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=998" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=999">Zenfone ROG 8G/512G (zs620kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=999" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=375">Zenpad 8 LTE 16G (z380knl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">åå» å¹³æ¿ç®å¥å è³¼å¹99å</span></h5></td>
+
+
+<td width="177" class="price">$4500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=375" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=770">Zenpad 10 LTE 2G/16G (z301ml)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$5990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=770" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=2&pk=593">Zenpad 3 8.0 LTE 32G (z581kl)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$8500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=2&pk=593" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_7" id="pro_7"></a><img src="images/prodpt/149vbE.jpg" alt="" width="100" height="50" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=7&pk=896">U Ultra 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éåå» ç®å¥ï¼éå®çºæ­¢</span></h5></td>
+
+
+<td width="177" class="price">$6800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=7&pk=896" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=7&pk=756">U11 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$10990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=7&pk=756" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=7&pk=882">U11 EYEs 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$7300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=7&pk=882" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=7&pk=852">U11+ 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$12300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=7&pk=852" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=7&pk=853">U11+ 6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$14300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=7&pk=853" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=7&pk=1008">U12 life 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$7300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=7&pk=1008" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=7&pk=943">U12+  6G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=7&pk=943" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=7&pk=944">U12+  6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=7&pk=944" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=7&pk=912">Desire 12 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$3300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=7&pk=912" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=7&pk=928">Desire 12 Plus 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=7&pk=928" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_4" id="pro_4"></a><img src="images/prodpt/888Pyt.jpg" alt="" width="100" height="19.37984496124" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=4&pk=994">K9 2G/16G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$2990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=4&pk=994" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=4&pk=732">G6 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éåå» ä¿è­·æ®¼ï¼éå®çºæ­¢</span></h5></td>
+
+
+<td width="177" class="price">$9990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=4&pk=732" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=4&pk=952">G7 Plus 6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">12/31ååéå¨è¯ç¦®å·3000å</span></h5></td>
+
+
+<td width="177" class="price">$22990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=4&pk=952" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=4&pk=991">Q7+ 4G/64G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$9800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=4&pk=991" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=4&pk=869">V30+ 4G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éç¡ç·åé»ç¤+æ®¼+12/31ååéç¦®å·3000å</span></h5></td>
+
+
+<td width="177" class="price">$18800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=4&pk=869" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=4&pk=910">V30s 6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éç¡ç·åé»ç¤+æ®¼+12/31ååéç¦®å·3000å</span></h5></td>
+
+
+<td width="177" class="price">$19800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=4&pk=910" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=4&pk=543">R100 360åº¦èæ¬å¯¦å¢ç¼é¡(G5/V20å¯ç¨)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$490</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=4&pk=543" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_6" id="pro_6"></a><img src="images/prodpt/593uAM.jpg" alt="" width="100" height="36" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=935">A6+ 4G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$6500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=935" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=1009">A7 2018ç 4G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éåå» èªææ£ or åå» æåçµ</span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=1009" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=876">A8+ (2018)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$10300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=876" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=951">A8 star 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$11300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=951" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=1032">A9 6G/128G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éåå» èªææ£</span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=1032" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=749">S8+ 64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">åå» éè¦ç®å¥å è³¼å¹499å</span></h5></td>
+
+
+<td width="177" class="price">$14990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=749" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=890">S9 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">åå» ç®å¥+èèå è³¼å¹499å</span></h5></td>
+
+
+<td width="177" class="price">$19500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=890" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=891">S9+ 6G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$21800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=891" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=892">S9+ 6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">åå» éè¦ç®å¥å è³¼å¹499å</span></h5></td>
+
+
+<td width="177" class="price">$20800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=892" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=893">S9+ 6G/256G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">åå» éè¦ç®å¥å è³¼å¹499å</span></h5></td>
+
+
+<td width="177" class="price">$23800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=893" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=900">J2 Pro 16G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$2990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=900" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=938">J4 2G/16G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$3800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=938" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=1010">J4+ 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=1010" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=939">J6 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">åå» æåçµå è³¼å¹299å</span></h5></td>
+
+
+<td width="177" class="price">$4990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=939" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=1003">J6+ 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$6500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=1003" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=957">J8 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">åå» æåçµå è³¼å¹299å</span></h5></td>
+
+
+<td width="177" class="price">$6300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=957" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=822">Note 8 64GB (n950)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">åå» LEDç®å¥å è³¼å¹499å</span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=822" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=969">Note9 6G/128G (n960)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">Premium Careå»¶é·ä¿åºå¡500å</span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=969" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=970">Note9 8G/512G (n960)</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">åå» ç¡ç·åé»ç¤å è³¼å¹990å</span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=970" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=595">Tab J 7.0 LTE t285</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$2990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=595" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=836">Tab A 8.0 LTE t385</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=836" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=1013">Tab A 201810.5 WIFI 3G/32G t590</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$9990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=1013" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=1014">Tab s4 10.5 WIFI 4G/64G t830</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$18500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=1014" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=6&pk=1015">Tab s4 10.5 LTE 4G/64GB t835</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$22500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=6&pk=1015" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_5" id="pro_5"></a><img src="images/prodpt/051k76.jpg" alt="" width="100" height="19.37984496124" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=5&pk=885">L2 (h4331) 3G/32G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=5&pk=885" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=5&pk=832">XA1 Plus (g3426) 4G/32G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$5800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=5&pk=832" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=5&pk=977">XA2 Plus (h4493) 6G/64GB</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$9990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=5&pk=977" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=5&pk=758">XA1 Ultra (g3226) 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$7500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=5&pk=758" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=5&pk=883">XA2 Ultra (h4223) 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$7500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=5&pk=883" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=5&pk=761">XZ Premium (g8142) 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$13500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=5&pk=761" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=5&pk=894">XZ2 (h8296) 6G/64G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">åå» éè¦ç®å¥å è³¼å¹699å</span></h5></td>
+
+
+<td width="177" class="price">$15990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=5&pk=894" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=5&pk=995">XZ3 (h9493) 6G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=5&pk=995" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_14" id="pro_14"></a><img src="images/prodpt/502Fc1.jpg" alt="" width="100" height="38.759689922481" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=953">Y7s 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$3800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=953" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=942">Y7 Prime 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$3990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=942" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=1004">Y9 2019 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=1004" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=973">Nova 3 6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=973" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=936">Nova 3e 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$6300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=936" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=976">Nova 3i 4G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=976" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=860">Mate 10 Pro 6GB/128GB</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éåå» å¤§ç¦®åï¼éå®çºæ­¢</span></h5></td>
+
+
+<td width="177" class="price">$16500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=860" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=1016">Mate 20 6G/128GB </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=1016" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=1017">Mate 20 Pro 6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=1017" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=907">P20 pro 6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éåå» å¤§ç¦®åï¼éå®çºæ­¢</span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=907" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=996">MediaPad T3 10.0 2G/16G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=996" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=917">MediaPad m5 8.4 LTE 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$11800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=917" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=14&pk=946">MediaPad m5 10.8 WiFi 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$11990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=14&pk=946" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_13" id="pro_13"></a><img src="images/prodpt/734wY8.gif" alt="" width="100" height="42.735042735043" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=1023">ç´ç±³5 Plus</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=1023" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=965">ç´ç±³6 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$3800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=965" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=966">ç´ç±³ 6 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=966" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=925">ç´ç±³ Note 5 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=925" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=926">ç´ç±³ Note 5 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$5990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=926" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=1022">ç´ç±³Note6 Pro 3G/32G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=1022" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=1021">ç´ç±³Note 6 Pro 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$6990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=1021" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=1031">å°ç±³ A2 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=1031" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=979">å°ç±³ Max 3 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$7800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=979" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=1019">å°ç±³8 Lite 6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$8800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=1019" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=967">å°ç±³ 8 6G / 128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$13990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=967" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=847">MIX2 64GB</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$9500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=847" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=955">MIX 2S 128GB</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$15990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=955" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=13&pk=989">pocofone f1 6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$10800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=13&pk=989" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_18" id="pro_18"></a><img src="images/prodpt/741o3d.jpg" alt="" width="100" height="21.818181818182" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=18&pk=874">ç¾å M8 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$7990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=18&pk=874" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=18&pk=855">ç¾å M8s 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$9990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=18&pk=855" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=18&pk=863">ç¾å M8s ç¾å°å¥³æ°å£« 4G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$11990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=18&pk=863" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=18&pk=895">ç¾å M8s åå¦Aå¤¢ 4G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$11990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=18&pk=895" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=18&pk=721">ç¾å T8 4G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$10990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=18&pk=721" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=18&pk=838">ç¾å T8 ééé» 4G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$10990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=18&pk=838" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=18&pk=958">ç¾å T9 6G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$19990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=18&pk=958" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_27" id="pro_27"></a><img src="images/prodpt/319uKq.jpg" alt="" width="100" height="19.37984496124" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=27&pk=947">S2 64GB </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=27&pk=947" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=27&pk=897">S3 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$6990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=27&pk=897" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=27&pk=945">S3 6G/128G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">&nbsp;é«éçéå¹å¼3000åå¤§ç¦®å&nbsp;</span></h5></td>
+
+
+<td width="177" class="price">$13990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=27&pk=945" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_20" id="pro_20"></a><img src="images/prodpt/881IQv.jpg" alt="" width="100" height="38.759689922481" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=948">A3 4G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=948" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=881">A73 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éåå» ç®å¥ï¼éå®çºæ­¢</span></h5></td>
+
+
+<td width="177" class="price">$5300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=881" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=974">AX5 3G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=974" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=1033">AX7 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=1033" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=1026">AX7 Pro 4G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=1026" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=700">R9S PLUS 6G/64G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éåå» ç®å¥æåå» ä¿è­·æ®¼</span></h5></td>
+
+
+<td width="177" class="price">$8990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=700" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=856">R11s 64GB</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$9500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=856" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=921">R15 6G / 128GB</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$11990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=921" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=1011">R17 6G/128G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=1011" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=1012">R17 pro 6G/128G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=1012" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=971">Find X 8G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=971" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=20&pk=1027">Find X 8G/256G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=20&pk=1027" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_30" id="pro_30"></a><img src="images/prodpt/7283AU.jpg" alt="" width="100" height="19.37984496124" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=30&pk=868">V7 32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éåå» éä»¶æ¶ç´åï¼éå®çºæ­¢</span></h5></td>
+
+
+<td width="177" class="price">$4990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=30&pk=868" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=30&pk=864">V7+ 64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$5990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=30&pk=864" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=30&pk=997">Y81 3G/32G </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=30&pk=997" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=30&pk=1020">V9 youth 4G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$5990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=30&pk=1020" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=30&pk=1025">v11 6G/128GB</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éå®ç¾èªæç¦®ç</span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=30&pk=1025" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=30&pk=1028">v11i  4G/128G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=30&pk=1028" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_17" id="pro_17"></a><img src="images/prodpt/751lXt.jpg" alt="" width="100" height="20" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=17&pk=956">Nokia 8110 é¦èæ© </a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$2300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=17&pk=956" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=17&pk=954">Nokia 3.1</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$3300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=17&pk=954" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=17&pk=962">Nokia 6.1 Plus 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$6800</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=17&pk=962" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=17&pk=1034">Nokia 8.1 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éå°ç¨ä¿è­·æ®¼ï¼éå®çºæ­¢</span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=17&pk=1034" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_28" id="pro_28"></a><img src="images/prodpt/965q1b.jpg" alt="" width="100" height="38.759689922481" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=28&pk=1030">E5s Plus 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=28&pk=1030" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=28&pk=988">G5s Plus 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0">éONPRO 2.4Aæåé ­</span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=28&pk=988" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=28&pk=950">G6 Plus (xt1926-5) 4G/64G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">ç¹å¹ä¸­</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=28&pk=950" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=28&pk=862">Moto X4</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$9990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=28&pk=862" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_29" id="pro_29"></a><img src="images/prodpt/7606_L.jpg" alt="" width="100" height="19.37984496124" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=29&pk=850">C11s</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$3300</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=29&pk=850" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=29&pk=886">S11</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$5500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=29&pk=886" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=29&pk=878">Y12 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$3500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=29&pk=878" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_33" id="pro_33"></a><img src="images/prodpt/246Alk.jpg" alt="" width="100" height="20" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=33&pk=1002">ELUGA Y 3G/32G</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$4500</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=33&pk=1002" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+
+<table width="700" border="0" cellspacing="0" cellpadding="0" class="hover  shoppinglist pointer">
+<tr style=" color:#b41c29">
+	<td width="90" style="padding:0 0 0 0"><a name="pro_34" id="pro_34"></a><img src="images/prodpt/5461db.jpg" alt="" width="99" height="25" /></td>
+	<td width="327">åè</td>
+	<td>å¹æ ¼</td>
+	<td>&nbsp;</td>
+</tr>
+ 
+<tr>
+<td colspan="2"><h5><a href="stcudorp_detail.php?idept=34&pk=1018">f2 plus 4G/128GB</a><span style="background-color:#F60;color:#FFF;font-size:12px;width:100px;height:30px;line-height:12px;padding:5px 0 5px 0"></span></h5></td>
+
+
+<td width="177" class="price">$7990</td>
+
+
+
+<td width="106"><a href="stcudorp_detail.php?idept=34&pk=1018" class="btn alert small" style="margin:0 0 0 0; font-size:15px;">è©³æ</a></td>
+</tr>
+ 
+ </table>
+<br /><br />
+ 
+ 
+ 
+ 
+<h2 style="color:#b41c29">&nbsp;</h2>
+  </div> 
+  
+
+<div class="grid3" style="margin:2px; padding-top:0px;">
+    <ul class="reset imglink" style="margin-top:20px">
+    
+       	
+       <li><a href="landtop50_new.php" target="_top">
+<img src="images/ad/563bEc.jpg" width="225" height="66" /></a>
+</li>
+    	
+       <li><a href="discount.php" target="_top">
+<img src="images/ad/175e5n.jpg" width="225" height="66" /></a>
+</li>
+    	
+       <li><a href="stcudorp_detail.php?idept=6&pk=822" target="_top">
+<img src="images/ad/239Etb.jpg" width="225" height="66" /></a>
+</li>
+    	
+       <li><a href="stcudorp_detail.php?idept=4&pk=952" target="_top">
+<img src="images/ad/100v67.jpg" width="225" height="66" /></a>
+</li>
+    	
+       <li><a href="stcudorp_detail.php?idept=5&pk=894" target="_top">
+<img src="images/ad/11068x.jpg" width="225" height="66" /></a>
+</li>
+         
+    </ul>
+    <div class="imglink">
+	<a href="shop.php"><img style="margin-bottom:10px;"src="images/shop.jpg" width="253" height="60" alt="å¨çæé»" longdesc="shop.php" /></a></div>
+	<div class="float-left">
+  
+	<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Flandtop.king%3Ffref%3Dts&width=252&height=300&colorscheme=light&show_faces=true&header=true&stream=false&show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:252px; height:300px;" allowTransparency="true"></iframe>  
+	</div>
+</div>  <div class="grid1" style="background-color:#b41c29; height:50px; margin-bottom:0px;">
+<ul class="inline float-left">
+  <li class="subnav"><a href="about.php">éæ¼å°æ¨</a></li>
+  <li class="subnav"><a href="news.php">ææ°æ¶æ¯</a></li>
+  <li class="subnav"><a href="terms.php">ç¶²ç«ä½¿ç¨æ¢æ¬¾</a></li>
+  <li class="subnav"><a href="policy.php">é±ç§æ¬æ¿ç­</a></li>
+    <li class="subnav"><a href="disclaimer.php">åè²¬è²æ</a></li>
+  <li class="subnav"><a href="tcatnoc.php">è¯çµ¡æå</a></li>
+  <li style="padding-left:40px; color:#FFF; font-weight:bold">ç´¯ç©è¨ªå®¢äººæ¸ï¼9078888äºº Â© 2014 Landtop co. LTD. ALL Rights Reserved.</li>
+</ul>
+ <ul class="inline float-right">
+<!-- <li style="font-size:15px; font-weight:bold; color:#FFF; margin-right:15px">å¨çå®¢æå°ç·ï¼(02)3393-3898</li> -->
+ </ul>
+  </div>
+        
+   <div style="width:45px; height:45px;right:30px;bottom:20px; position:fixed; z-index:2000;" class="imglink"><a href="#" class="abgne_gotoheader"><img src="images/top.png" alt="top"></a></div>
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?2dXXUHpyvj9okYN4lwKx6XiCTWLch4Jr";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
+  </div>
+  <!-- XTYLE GREETINGS : END -->
+</body>
+</html>
