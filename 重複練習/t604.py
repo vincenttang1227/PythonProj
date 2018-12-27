@@ -1,11 +1,11 @@
-numList = []
-countList = []
+numLi = []
+countLi = []
 
 for i in range(10):
-    numList.append( int(input()) )
+    numLi.append( int(input()) )
 
 for i in range(10):
-    countList.append( numList.count( numList[i] ) )
+    countLi.append( numLi.count( numLi[i] ) )
 
-print( numList[ countList.index( max( countList ) ) ] )
+print( numLi[ countLi.index( max( countLi ) ) ] )
 print( max( countList) )
